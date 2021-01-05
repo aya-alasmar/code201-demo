@@ -16,6 +16,7 @@ main {
     top: 100px;
     left: 0px;
     right: 0px;
+    justify-content: center;
    
 }
 
@@ -23,10 +24,32 @@ footer{
     position: absolute;
     left: 0px;
     right: 0px;
-    top: 720px;
+    top: 1020px;
     height: 40px;
     background-color: black;
     color: rgb(233, 231, 122);
+}
+ul ,ol{
+    display: inline-block;
+    margin:50px 0px 0PX 150px;
+   
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 0px 10px 0px;
+
+}
+ol{
+    list-style: decimal ;
+}
+ul{
+    list-style-type: square;
+}
+ul li , ol li{
+    font-size: 17px;
+    font-weight: lighter;
+
 }
 
 .navbar{
