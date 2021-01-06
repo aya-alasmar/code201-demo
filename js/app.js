@@ -21,7 +21,7 @@ function validation(uinput, msg) {
     while (uinput === '' || uinput === null || uinput === undefined || !(uinput.toLowerCase() === 'y' || uinput.toLowerCase() === 'n')) {
         uinput = prompt(msg);
         if (!(uinput.toLowerCase() === 'y' || uinput.toLowerCase() == 'n' )) {
-            alert("you can input Y / N or yes/no only ");
+            alert("you can input Y / N  only ");
         }
     }
     return uinput;
@@ -52,20 +52,18 @@ function validationColor(uinput, msg) {
 // end of validationColor function
 
 
-// the questions
-q[0]="My name is Ayat ? Y/N ";
-q[1]="I was graduated form Zarqa University? Y/N ";
-q[2]="I'm a programmer ? Y/N  ";
-q[3]="I'm intrested in frontend ? Y/N ";
-q[4]="I have 2 years work experience? Y/N";
+
+
+//the questions
+q=["My name is Ayat ? Y/N ","I was graduated form Zarqa University? Y/N ","I'm a programmer ? Y/N  " ,"I'm intrested in frontend ? Y/N ","I have 2 years work experience? Y/N"];
 
 
 // the coorect answers 
-answers[0]='n';
-answers[1]='y';
-answers[2]='y';
-answers[3]='y';
-answers[4]='n';
+answers=['n','y','y','y','n'];
+
+
+
+
 
 
 // to ask the qestions 1-5 
