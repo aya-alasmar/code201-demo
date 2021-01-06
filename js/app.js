@@ -1,13 +1,10 @@
 'use strict'
 
 var grade = 0;
-var msg1, msg2, msg3, msg4, msg5, msg6, msg7; //corectness nsg for each question
 var msgs=new Array();
 var q =new Array();
 var answers =new Array();
 var uanswers= new Array();
-
-var q1,q2,q3,q4,q5,q6,q7; // the answers 
 var correctMsg=" "; // to enter the msg that will shows in alert if the user guess the number 
 var colors = ["pink", "black", "white", "blue"]; // array for qeustion 7
 var numIteration =new Array(); ; //array to store the user number input for qeustion 6 (at most length=4)
@@ -21,7 +18,7 @@ function validation(uinput, msg) {
     while (uinput === '' || uinput === null || uinput === undefined || !(uinput.toLowerCase() === 'y' || uinput.toLowerCase() === 'n')) {
         uinput = prompt(msg);
         if (!(uinput.toLowerCase() === 'y' || uinput.toLowerCase() == 'n' )) {
-            alert("you can input Y / N or yes/no only ");
+            alert("you can input Y / N ");
         }
     }
     return uinput;
