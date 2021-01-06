@@ -1,11 +1,11 @@
 body{
     font-family:cursive;
-     background-color:cornsilk;
+     background-color:rgb(191, 190, 233);
      line-height: 30px;
 }
 
 header{
-    background-color: rgb(33, 34, 32);
+    background-color: rgb(55, 35, 56);
     height: 100px;
     position: absolute;
     top: 0px;
@@ -25,10 +25,10 @@ footer{
     position: absolute;
     left: 0px;
     right: 0px;
-    top: 1320px;
+    top: 1500px;
     height: 40px;
-    background-color: black;
-    color: rgb(233, 231, 122);
+    background-color: rgb(182, 159, 159);
+    color: rgb(219, 219, 190);
 }
 ul ,ol{
     display: inline-block;
@@ -58,7 +58,7 @@ display: inline-block;
 float: right;
 margin-top:0px ;
 margin-right: 20px;
-
+color: cornsilk;
 }
 #home{
     font-size: 18px;
@@ -70,20 +70,26 @@ display: inline-block;
 margin:0px 10px;
 }
 .navlink:hover{
-    color:rgb(238, 236, 230) ;
+    color:rgb(175, 173, 165) ;
 }
 .navlink {
 text-decoration: none;
-color: rgb(233, 231, 122);
+color: rgb(155, 154, 84);
 font-size: 22px;
 }
 #copyright{
     display: inline-block;
-    margin: 10px 550px;
+    margin: 10px 450px;
 }
 #date{
     display: inline-block;
     float: right;
     margin: 10px;
 
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size:18px;
+    font-weight: bold;
 }
