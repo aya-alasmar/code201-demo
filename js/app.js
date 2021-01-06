@@ -2,9 +2,12 @@
 
 var grade = 0;
 var msgs=new Array();
-var q =new Array();
-var answers =new Array();
-var uanswers= new Array();
+var q =new Array(); // question
+var answers =new Array(); // correct ansers
+var uanswers= new Array(); // user answers
+
+var unserAnswer6,unserAnswer7; // the answers fro 6th , 7th qeustions.
+var msg6, msg7;  // 
 var correctMsg=" "; // to enter the msg that will shows in alert if the user guess the number 
 var colors = ["pink", "black", "white", "blue"]; // array for qeustion 7
 var numIteration =new Array(); ; //array to store the user number input for qeustion 6 (at most length=4)
@@ -18,7 +21,7 @@ function validation(uinput, msg) {
     while (uinput === '' || uinput === null || uinput === undefined || !(uinput.toLowerCase() === 'y' || uinput.toLowerCase() === 'n')) {
         uinput = prompt(msg);
         if (!(uinput.toLowerCase() === 'y' || uinput.toLowerCase() == 'n' )) {
-            alert("you can input Y / N ");
+            alert("you can input Y / N or yes/no only ");
         }
     }
     return uinput;
@@ -85,54 +88,55 @@ for(var i=0 ;i<5;i++){
 
 // for question number 6
 for (var i = 4; i > 0; i--) {
-    q6 = validationNum(q6, "choose a random ineger number between 1-100 ^_^ , you still have "+ i +"  iteration ");
-    if (parseInt(q6) < ranNum) {
+    unserAnswer6 = validationNum(unserAnswer6, "choose a random ineger number between 1-100 ^_^ , you still have "+ i +"  iteration ");
+    if (parseInt(unserAnswer6) < ranNum) {
         msg6 = "too low!";
-        numIteration.push(q6);
+        numIteration.push(unserAnswer6);
         alert(msg6);
     }
-    else if (parseInt(q6) > ranNum) {
+    else if (parseInt(unserAnswer6) > ranNum) {
         msg6 = "too high!";
-        numIteration.push(q6);
+        numIteration.push(unserAnswer6);
         alert(msg6); 
     }
     else {
         msg6 = "correct ";
         grade++;
         correctMsg ="good job ,correct ! ";
-        numIteration.push(q6);
+        numIteration.push(unserAnswer6);
         break;
     }
 
 }
 alert ("the numbers you are already chosen "+numIteration.toString());
 alert(correctMsg+" the random number is " + ranNum);
-console.log(correctMsg,"the random number is " , ranNum);
+console.log(correctMsg," the random number is " , ranNum);
 
  
 
 // for question number 7
 for (var i = 6; i > 0; i--) {
-    q7 = validationColor(q7, " guess one of my fav colors ! you still have "+ i +" iteration ");
+    unserAnswer7 = validationColor(unserAnswer7, " guess one of my fav colors ! you still have "+ i +" iteration ");
     for (var j = 0; j < colors.length; j++) {
-        if (q7.toLowerCase() === colors[j]) {
+        if (unserAnswer7.toLowerCase() === colors[j]) {
            alert(" you are amazing ! correct " + colors[j] + " one of my fav colors !");
             grade++;
             break;
         }
     }
-    if (q7.toLowerCase() === colors[j]){
-        colorIteration.push(q7);
+    if (unserAnswer7.toLowerCase() === colors[j]){
+        colorIteration.push(unserAnswer7);
         break;
     }
     else{
-        colorIteration.push(q7);
+        colorIteration.push(unserAnswer7);
         alert(" incorrect choose another color!");
     }
 
 } 
 alert("your color iteration : "+colorIteration.toString() + " and my fav colors are "+colors.toString());
 console.log("your color iteration : ", colorIteration.toString() , " and my fav colors are " ,colors.toString());
+
 
 
 alert(" your grade : " + grade); 
