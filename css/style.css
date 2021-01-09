@@ -1,85 +1,99 @@
 body{
     font-family:cursive;
-     background-color:rgb(191, 190, 233);
+     background-color:  rgb(248, 223, 227);
      line-height: 30px;
 }
 
 header{
-    background-color: rgb(55, 35, 56);
-    height: 100px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    left: 0px;
+    background-color: rgb(2, 2, 2);
+    height:200px;
+    font-family:fantasy;
+   
 }
 main {
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    right: 0px;
-    justify-content: center;
+     justify-content: center;
    
 }
 
 footer{
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 1500px;
+    margin-bottom: 0%;
     height: 40px;
-    background-color: rgb(182, 159, 159);
-    color: rgb(219, 219, 190);
+    background-color: rgb(0, 0, 0);
+    color:   rgb(248, 223, 227);
+    line-height: 20px;
 }
-ul ,ol{
-    display: inline-block;
-    margin:50px 0px 0PX 150px;
-   
-}
-h3{
-    font-size: 20px;
-    font-weight: bold;
-    padding: 0px 0px 10px 0px;
 
-}
 ol{
     list-style: decimal ;
+    margin-bottom: 30px;
+
+}
+.projects li a{
+    text-decoration: none;
+    color: rgb(97, 106, 116);
+    
+}
+.projects li a:hover{
+    color:  rgb(233, 166, 177);
+}
+ol li {
+    margin-left: 40px;
 }
 ul{
+    display: inline-block;
+    margin:0px 0px 0PX 150px;
     list-style-type: square;
 }
-ul li , ol li{
-    font-size: 17px;
-    font-weight: lighter;
 
+.header-profile{
+    color:  rgb(240, 200, 207);
+    font-size: 35px;
+   
+    margin-left: 50px;
+    padding-top: 80px;
+ }
+
+.logo{
+    display: inline-block;
+    border-radius:50%;
+    margin-left:550px;
+    margin-top: -160px;
+    
 }
 
 .navbar{
-display: inline-block;
-float: right;
-margin-top:0px ;
-margin-right: 20px;
-color: cornsilk;
+    display: inline-block;
+    float: right;
+    margin-top:-110px ;
+    margin-right: 20px;
+    color:  rgb(248, 223, 227);
+}
+strong {
+    font-weight: 900;
 }
 #home{
     font-size: 18px;
-    padding: 10px 30px;
+    padding: 0px 30px;
     margin: 20px;
 }
 .navitem {
-display: inline-block;
-margin:0px 10px;
+    display: inline-block;
+    margin-right: 20px;
 }
 .navlink:hover{
-    color:rgb(175, 173, 165) ;
+    color:  rgb(233, 166, 177);
 }
 .navlink {
-text-decoration: none;
-color: rgb(155, 154, 84);
-font-size: 22px;
+    display: inline-block;
+    text-decoration: none;
+    color:  rgb(248, 223, 227);
+    font-size: 22px;
+    height: 200px;
+    line-height: 100px;
 }
 #copyright{
     display: inline-block;
-    margin: 10px 450px;
+    margin: 10px 550px;
 }
 #date{
     display: inline-block;
@@ -87,9 +101,4 @@ font-size: 22px;
     margin: 10px;
 
 }
-a {
-    text-decoration: none;
-    color: black;
-    font-size:18px;
-    font-weight: bold;
-}
+

@@ -9,5 +9,5 @@ function validation(uinput,msg){
 var username= validation(username,"please enter your name ");
 //console.log('hello ' , username);
 alert ("hello "+username);
-document.write('<h1 style="color:black;font-size:30px;text-align: center;padding-top:20px;"> Welome '+ username +' in my wolrd!</h1> ');
+document.write('<h1 style="color:black;font-size:30px;padding-top:20px;padding-left:450px;"> Welome '+ username +' in my wolrd!</h1> ');
 
